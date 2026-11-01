@@ -26,6 +26,10 @@ public class GithubApiClient {
 
     private final RestClient.Builder restClientBuilder;
 
+    public GithubApiClient(RestClient.Builder restClientBuilder) {
+        this.restClientBuilder = restClientBuilder;
+    }
+
      public List<Map<String, Object>> listUserRepos(String accessToken) {
         List<Map<String, Object>> all = new ArrayList<>();
         int page = 1;

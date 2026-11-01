@@ -1,16 +1,16 @@
-// "use client";
+"use client";
 
-// import { RequireAuth } from "@/components/providers/require-auth";
-// import { AppShell } from "@/components/layout/app-shell";
-// import { RepoDashboard } from "@/components/dashboard/repo-dashboard";
+import { RequireAuth } from "@/components/providers/require-auth";
+import { AppShell } from "@/components/layout/app-shell";
+import { RepoDashboard } from "@/components/dashboard/repo-dashboard";
 
-// export default function DashboardPage() {
-//   return (
-//     <RequireAuth>
-//       <AppShell hideHeader>
-//         <RepoDashboard/>
-//       </AppShell>
-//     </RequireAuth>
-//   );
-// }
+export default function DashboardPage() {
+  return (
+    <RequireAuth>
+      <AppShell hideHeader>
+        <RepoDashboard/>
+      </AppShell>
+    </RequireAuth>
+  );
+}
     
